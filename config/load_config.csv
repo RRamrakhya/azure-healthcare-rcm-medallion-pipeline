@@ -1,0 +1,11 @@
+source_db,table_name,load_type,watermark_column,target_path,is_active
+hospital_a_db,patients,incremental,ModifiedDate,hospital_a/patients,1
+hospital_a_db,providers,full,,hospital_a/providers,1
+hospital_a_db,departments,full,,hospital_a/departments,1
+hospital_a_db,encounters,incremental,EncounterDate,hospital_a/encounters,1
+hospital_a_db,transactions,incremental,ServiceDate,hospital_a/transactions,1
+hospital_b_db,patients,incremental,updated_date,hospital_b/patients,1
+hospital_b_db,providers,full,,hospital_b/providers,1
+hospital_b_db,departments,full,,hospital_b/departments,1
+hospital_b_db,encounters,incremental,encounter_date,hospital_b/encounters,1
+hospital_b_db,transactions,incremental,service_date,hospital_b/transactions,0
